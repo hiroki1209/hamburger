@@ -1,0 +1,45 @@
+@import "../../Foundation/mixin";
+.c-top-img{
+    position: relative;
+    .top-title{
+      color: #ffffff;  
+      position: absolute;  
+      display: flex;
+      align-items: center;
+      top: calc(50% - 37px);
+      @include mq(sp){
+          flex-direction: column;
+          align-items: stretch;
+      }
+      h1{
+          font-size: 50px;
+          margin-left: 5.4vw;
+          @include mq(sp){
+              font-size: 30px;
+          }
+      }
+      p{
+          font-size: 12px;
+      }
+    }
+    .sp-top{
+        display: none;
+        @include mq(sp){
+            display: block;
+        }
+    }
+    .tab-top{
+        display: none;
+        @include mq(tab){
+            display: block;
+        }
+        @include mq(sp){
+            display: none;
+        }
+    }
+    .pc-top{
+        @include mq(tab){
+            display: none;
+        }
+    }
+}

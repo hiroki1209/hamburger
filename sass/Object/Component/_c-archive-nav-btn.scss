@@ -1,0 +1,13 @@
+@import "../../Foundation/mixin";
+.c-archive-nav-btn{
+    padding: 25px 110px;
+    width: 288px;
+    color:#707070 ;
+    font-size: 12px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    @include mq(tab){
+        padding: 10px 50px;
+        width: 160px;
+    }
+}

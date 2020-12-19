@@ -1,0 +1,10 @@
+@import "../Foundation/mixin";
+.l-page-nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   
+    @include mq(sp){
+        flex-direction: column;
+    }
+}

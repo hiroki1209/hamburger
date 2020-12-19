@@ -1,0 +1,13 @@
+@import "../Foundation/mixin";
+.l-page-nav-taxt{
+    width: 100%;
+    height: 35%;
+    max-height: 35%;
+    position: absolute;
+    top: 65%;
+    @include mq(tab){
+        height: 50%;
+        max-height: 50%;
+        top: 50%;
+    }
+}

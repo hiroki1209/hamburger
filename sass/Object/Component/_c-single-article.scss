@@ -1,0 +1,18 @@
+@import "../../Foundation/mixin";
+.c-single-article{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .c-single-article-img{
+        @include mq(tab){
+           width: 38vw; 
+        }
+    }
+    p{
+        width: 38vw;
+        font-size: 12px;
+        @include mq(tab){
+            width: 50vw;
+        }
+    }
+}

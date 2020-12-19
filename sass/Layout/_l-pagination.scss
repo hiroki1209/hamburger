@@ -1,0 +1,42 @@
+@import "../Foundation/mixin";
+.l-pagination{
+    margin-top:100px;
+    @include mq(sp){
+        margin-top: 40px;
+    }
+   
+    .page{
+        border:1px #3C2B1C solid;color:#707070; 
+		padding:5px 10px;
+		margin: 10px;
+        @include mq(sp){
+            display: none;
+        }
+    }
+    a{
+        font-size: 16px;
+    }
+    .current{
+		font-size: 16px;
+        color: #ffffff;
+		background-color:#3C2B1C ;
+		padding:6px 11px;
+		margin: 10px;
+		@include mq(sp){
+            display: none;
+        }
+    }
+    .previouspostslink{
+		font-size: 25px;
+	}
+	.nextpostslink{
+		font-size: 25px;
+	}
+    .pages{
+		margin: 10px;
+        @include mq(sp){
+            display: none;
+        }
+    }
+   
+}

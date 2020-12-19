@@ -1,0 +1,20 @@
+@import "../../Foundation/mixin";
+.c-single-img_tile{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    img{
+        width: 32%;
+        height: auto;
+        margin-bottom: 30px;
+        @include mq(tab){
+            width: 49%;
+        }
+        @include mq(sp){
+            width: 100%;
+        }
+    }
+    @include mq(tab){
+       justify-content: space-between; 
+    }
+}

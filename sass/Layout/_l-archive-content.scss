@@ -1,0 +1,15 @@
+@import "../Foundation/mixin";
+.l-archive-content{
+    color:#3C2A10 ;
+    margin-bottom: 50px;
+    h4{
+        font-size: 32px;
+        margin: 20px 0 20px 0;
+        @include mq(sp){
+            font-size: 24px;
+        }
+    }
+    p{
+        font-size: 12px;
+    }
+}

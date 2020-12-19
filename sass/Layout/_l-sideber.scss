@@ -1,0 +1,35 @@
+@import "../Foundation/mixin";
+.l-sideber{
+  width: 310px;
+  background-color:#F2EDE9 ; 
+  z-index: 100; 
+  transition: .5s;
+  &.is-open{
+    @include mq(tab){
+      left :calc(100% - 300px); 
+      overflow: scroll;
+      height: 100%;
+      transition: .5s;
+    }
+  }
+  @include mq(tab){
+    position: fixed;
+    z-index: 100;
+    left: 100%;
+  }
+  .sideber-list{
+    color: #707070;
+    margin-top: 200px;
+    margin-left: 40px;
+    ul li{
+      font-size: 20px;
+      ul{
+        padding: 20px ;
+       li{
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+    }
+  }
+}

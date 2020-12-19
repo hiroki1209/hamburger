@@ -1,0 +1,12 @@
+@import "../../Foundation/mixin";
+.c-quote_tag{
+    background-color:#F5F5F5 ;
+    padding: 45px;
+    font-size: 14px;
+    .Blockquote{
+        margin-bottom: 80px;
+    }
+    @include mq(tab){
+        padding: 20px;
+    }
+}

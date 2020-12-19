@@ -1,0 +1,7 @@
+@import "../Foundation/mixin";
+.l-left-wrapper{
+    width: calc(100% - 310px);   
+    @include mq(tab){
+        width: 100%;
+    }
+}

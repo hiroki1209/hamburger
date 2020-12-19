@@ -1,0 +1,17 @@
+@import "../Foundation/mixin";
+.l-page-nav-right{
+    width: auto;
+    margin:8% 6% 10% 3.5%;
+    position: relative;
+    @include mq(tab){
+        margin: 20px;
+    }
+   
+    h3{
+        font-size: 5vw;
+        color:#ffffff ;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+}

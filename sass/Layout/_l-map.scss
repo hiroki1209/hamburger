@@ -1,0 +1,44 @@
+@import "../Foundation/mixin";
+.l-map{
+    width: 100%;
+    height: auto;
+   position: relative;
+   &::before{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+  }  
+  img{
+    max-width: none;
+    }
+    .map-text{
+      width: 774px;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 6%;
+      h5{
+       font-size: 30px; 
+       color: #ffffff;
+       margin-bottom:10% ;
+      }
+      p{
+        font-size: 14px;
+        color: #ffffff;
+        line-height: 2em;
+        margin-top: 10%;
+      }
+      @include mq(tab){
+        width: 100%;
+      }
+    }
+      
+ } 

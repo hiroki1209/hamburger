@@ -1,0 +1,7 @@
+@import "../../Foundation/mixin";
+.c-single-info{
+    margin: 0 0 60px 0;
+    @include mq(sp){
+        margin: 0 0 30px 0;
+    }
+}

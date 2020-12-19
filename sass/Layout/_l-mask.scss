@@ -1,0 +1,21 @@
+@import "../Foundation/mixin";
+.l-mask{
+   display: none; 
+}
+@include mq(tab){
+.is-open{
+.l-mask{
+    display: block;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 10;
+    cursor: pointer;
+    transition: .5s;
+}
+}
+}

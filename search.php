@@ -13,9 +13,9 @@
    <?php get_header(); ?>
 	 </header>
 	   <div class="c-top-img">
-		   <img class="pc-top" src="imge/menu-top.png" alt="top">
-		   <img class="tab-top" src="imge/tab-menu-top.png" alt="top">
-		   <img class="sp-top" src="imge/sp-menu-top.png" alt="top">
+		   <img class="pc-top" src="<?php echo get_template_directory_uri(); ?>/imge/menu-top.png" alt="top">
+		   <img class="tab-top" src="<?php echo get_template_directory_uri(); ?>/imge/tab-menu-top.png" alt="top">
+		   <img class="sp-top" src="<?php echo get_template_directory_uri(); ?>/imge/sp-menu-top.png" alt="top">
 		   <div class="top-title">
 		   <h3>Search:</h3>
 		   <?php
